@@ -1,5 +1,6 @@
-import { AbsencesComponent } from './components/absences/absences.component';
 import { Routes } from '@angular/router';
+
+import { AbsencesComponent } from './components/absences/absences.component';
 import { ShiftListComponent } from './components/shift-list/shift-list.component';
 import { ShiftManagementComponent } from './components/shift-management/shift-management.component';
 

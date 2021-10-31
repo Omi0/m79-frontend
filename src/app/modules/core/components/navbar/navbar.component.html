@@ -1,5 +1,8 @@
 <ul>
   <li *ngFor="let item of items">
-    <a [routerLink]="item.route">{{ item.name }}</a>
+    <a class="tw-group" [routerLink]="item.route">
+      <fa-icon [icon]="item.icon"></fa-icon>
+      <!-- <div class="tooltip group-hover:tw-scale-100">{{ item.name }}</div> -->
+    </a>
   </li>
 </ul>

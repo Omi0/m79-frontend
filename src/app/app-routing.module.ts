@@ -1,6 +1,5 @@
-import { RouterModule, Routes } from '@angular/router';
-
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
@@ -19,7 +18,7 @@ const routes: Routes = [
     path: 'shifts',
     loadChildren: () => import('./modules/shifts/shifts.module').then((m) => m.ShiftsModule),
   },
-  // { path: '**', redirectTo: '/', pathMatch: 'full' },
+  { path: '**', redirectTo: '', pathMatch: 'full' }, //Redirect to homepage for unknown route
 ];
 
 @NgModule({
