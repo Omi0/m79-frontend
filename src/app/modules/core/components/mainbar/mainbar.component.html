@@ -1,1 +1,9 @@
-<p>mainbar works!</p>
+<a routerLink="/" class="logo">Wilson.</a>
+
+<ng-container  *ngIf="user$ | async as user; else notFound">
+    {{ user.username }}
+    <fa-icon [icon]="logoutIcon" (click)="logout()"></fa-icon>
+</ng-container>
+
+<ng-template #notFound><div (click)="login()">Login</div></ng-template>
+
