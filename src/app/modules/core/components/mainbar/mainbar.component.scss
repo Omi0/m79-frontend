@@ -1,5 +1,8 @@
 :host {
     .logo {
-        @apply tw-uppercase tw-text-[2rem];
+        @apply tw-uppercase tw-text-[2rem] tw-px-5 tw-cursor-pointer hover:tw-text-gray-400 tw-transition-colors;
+    }
+    .item {
+        @apply tw-p-5 tw-cursor-pointer hover:tw-text-gray-400 tw-transition-colors
     }
 }

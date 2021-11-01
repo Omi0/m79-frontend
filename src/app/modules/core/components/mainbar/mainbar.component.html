@@ -1,9 +1,10 @@
 <a routerLink="/" class="logo">Wilson.</a>
 
-<ng-container  *ngIf="user$ | async as user; else notFound">
-    {{ user.username }}
-    <fa-icon [icon]="logoutIcon" (click)="logout()"></fa-icon>
-</ng-container>
+<div class="mainbar-menu">
+    <ng-container  *ngIf="user$ | async as user; else notFound">
+        <a class="item">Hello, {{ user.username || user.name}}</a>
+        <a class="item" (click)="logout()"><fa-icon [icon]="logoutIcon"></fa-icon></a>
+    </ng-container>
 
-<ng-template #notFound><div (click)="login()">Login</div></ng-template>
-
+    <ng-template #notFound><a class="item" (click)="login()">Login</a></ng-template>
+</div>
