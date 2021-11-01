@@ -22,4 +22,9 @@ describe('HomepageComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should show img', () => {
+    const mainbarMenu = (fixture.nativeElement as HTMLElement).querySelector('img');
+    expect(mainbarMenu).toBeTruthy();
+  });
 });
