@@ -1,6 +1,6 @@
 module.exports = {
-  mode: 'jit',
-  prefix: 'tw-',
+  mode: "jit",
+  prefix: "tw-",
   purge: {
     enabled: true,
     content: ["./src/**/*.{html,ts}"],
@@ -10,6 +10,8 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
-  }
+    extend: {
+      scale: ["group-hover"],
+    },
+  },
 };

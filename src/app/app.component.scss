@@ -1,11 +1,11 @@
 :host {
   m79-mainbar {
-      @apply tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-flex tw-flex-row tw-w-auto tw-h-16 tw-bg-gray-800 tw-text-white;
+      @apply tw-fixed tw-top-0 tw-left-0 tw-right-0 tw-flex tw-items-center tw-justify-between tw-flex-wrap tw-flex-row tw-w-auto tw-h-16 tw-bg-gray-800 tw-text-white;
   }
   m79-navbar {
-    @apply tw-fixed tw-top-16 tw-left-0 tw-h-screen tw-w-16 tw-flex tw-flex-col tw-bg-gray-600 tw-text-white;
+    @apply tw-fixed tw-top-16 tw-left-0 tw-h-screen tw-w-16 tw-flex tw-flex-col tw-bg-gray-600 tw-text-white tw-shadow-lg;
   }
   main {
-    @apply tw-pl-16 tw-pt-16;
+    @apply tw-pl-16 tw-pt-16 tw-h-screen tw-bg-gray-200;
   }
 }

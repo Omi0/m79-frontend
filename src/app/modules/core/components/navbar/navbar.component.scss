@@ -1,12 +1,11 @@
 :host {
   ul {
     a {
-      @apply tw-relative tw-flex tw-items-center tw-justify-center tw-h-12 tw-w-12 tw-mx-auto;
-    }
+      @apply tw-relative tw-flex tw-items-center tw-justify-center tw-h-12 tw-w-12 tw-mx-auto hover:tw-text-gray-400 tw-transition-colors;
 
-    //ToDo tooltip doesn't work on hover
-    .tooltip {
-      @apply tw-absolute tw-w-auto tw-p-2 tw-m-2 tw-min-w-max tw-left-14 tw-text-white tw-bg-gray-900 tw-text-xs tw-transition-all tw-duration-100 tw-scale-0 tw-origin-left;
+      .tooltip {
+        @apply tw-absolute tw-w-auto tw-p-2 tw-m-2 tw-min-w-max tw-left-14 tw-text-white tw-bg-gray-900 tw-text-xs tw-transition-all tw-duration-100  tw-origin-left;
+      }
     }
   }
 }
