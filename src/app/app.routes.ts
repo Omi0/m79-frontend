@@ -1,7 +1,6 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
-const routes: Routes = [
+export const appRoutes: Routes = [
   {
     path: '',
     loadChildren: () => import('./modules/core/core.module').then((m) => m.CoreModule),
@@ -18,11 +17,5 @@ const routes: Routes = [
     path: 'shifts',
     loadChildren: () => import('./modules/shifts/shifts.module').then((m) => m.ShiftsModule),
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' }, //Redirect to homepage for unknown route
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

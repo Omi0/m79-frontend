@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { appRoutes } from './app.routes';
 import { AppComponent } from './app.component';
 import { CoreModule } from './modules/core/core.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,7 @@ import { CoreModule } from './modules/core/core.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(appRoutes),
     CoreModule.forRoot()
   ],
   providers: [],
